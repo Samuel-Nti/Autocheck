@@ -1,0 +1,69 @@
+.add-car-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-car-form-content {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  max-height: 80vh; /* Maximum height for scrollability */
+  overflow-y: auto; /* Add vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+
+
+.add-car-form-content h3 {
+  margin-bottom: 20px;
+}
+
+.add-car-form-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-car-form-content input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.close-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}

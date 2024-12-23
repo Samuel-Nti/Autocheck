@@ -1,0 +1,79 @@
+.invoice-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .client-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .company-details {
+    text-align: right;
+  }
+  
+  .company-details h2 {
+    margin: 0;
+    color: #d10a0a; /* Company red color */
+  }
+  
+  .invoice-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .client-details {
+    width: 50%;
+  }
+  
+  .invoice-meta {
+    width: 50%;
+    text-align: right;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-table th, 
+  .invoice-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .invoice-table th {
+    background-color: #ffcc00; /* Mild yellow color */
+    color: #000;
+  }
+  
+  .invoice-total {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-footer {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .invoice-footer p {
+    margin: 5px 0;
+  }
+  

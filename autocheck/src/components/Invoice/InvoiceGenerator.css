@@ -1,0 +1,222 @@
+/* General styling */
+.invoice-generator {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffe100;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-generator h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #cc0000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+input {
+  width: calc(100% - 16px); /* Wider input fields */
+  padding: 12px; /* Increased padding */
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 14px;
+  color: #495057;
+}
+
+th {
+  background-color: #cc0000;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #343a40;
+}
+
+button {
+  background-color: #cc0000;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px; /* Adequate padding */
+  border-radius: 8px;
+  width: 95%; /* Use 95% of the viewport width */
+  max-width: 1500px; /* Increased max-width for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+  max-height: 80vh; /* Limit the height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin-left: 10px; /* Add space between buttons */
+}
+
+.signature-section {
+  margin-top: 20px;
+  text-align: right;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #343a40;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .invoice-generator, .modal-content {
+    padding: 15px;
+  }
+
+  table th, table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 10px; /* Add gap between buttons */
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .form-group {
+    display: block;
+  }
+
+  .total {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .invoice-generator {
+    padding: 10px;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .invoice-generator h1 {
+    font-size: 20px;
+  }
+
+  table th, table td {
+    font-size: 11px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px; /* Keep padding consistent */
+  }
+
+  button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .modal {
+    display: none;
+  }
+
+  .invoice-generator {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  button {
+    display: none;
+  }
+}

@@ -1,0 +1,114 @@
+.contact-us-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ff0000;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contact-info-item {
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item h3 {
+  color: #ff0000;
+  margin-bottom: 5px;
+}
+
+.contact-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width for the form */
+}
+
+.form-group {
+  width: 100%; /* Ensure full width */
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px auto 0; /* Ensure the button is centered */
+  display: block; /* Display block ensures centering with margin auto */
+  transition: background-color 0.3s ease;
+  width: fit-content; /* Button size adapts to content */
+}
+
+.submit-button:hover {
+  background-color: #ffdd00;
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .contact-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info-item {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .submit-button {
+      width: 100%; /* Full width on smaller screens */
+      padding: 12px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .submit-button {
+      width: 100%; /* Full width on mobile */
+      padding: 10px;
+      font-size: 14px;
+  }
+}
